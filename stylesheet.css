@@ -1,0 +1,111 @@
+* {
+ 	margin: 0;
+ 	padding: 0;
+}
+
+/* Header + inhoud */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 6vh;
+	background-color: #03DAC6;
+}
+
+div.company {
+	margin-left: 10px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+/* Body + inhoud */
+
+body {
+	background-color: #131313;
+}
+
+.mapboxgl-popup {
+  	width: 200px;
+}
+
+.mapboxgl-popup-content {
+  	text-align: left;
+  	font-family: 'Open Sans', sans-serif;
+    background-color: #03DAC6;
+}
+
+div.titelMap {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 20px;
+	width: 90vw;
+	height: 4vh;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	margin-left: 5px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-left: 5px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#map {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 60px;
+	border-radius: 5px;
+  	height: 50vh;
+  	width: 90vw;
+}
+
+/* Tablets, 750px breakpoint */
+@media only screen and (min-width: 750px) {
+	
+	#map {
+	  	height: 60vh;
+	}  
+}
+
+/* Laptops, 1050px breakpoint */
+@media only screen and (min-width: 1050px) {
+ 	
+ 	div.titelMap {
+ 		width: 70vw;
+ 	}	
+
+ 	#map {
+	  	height: 70vh;
+	  	width: 70vw;
+	}  
+}
+
+/* Desktop, 1485px breakpoint */
+@media only screen and (min-width: 1485px) {
+	
+	div.titelMap {
+		width: 60vw;
+	}
+
+	#map {
+		width: 60vw;
+	}
+}
